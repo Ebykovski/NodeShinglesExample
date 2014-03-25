@@ -13,9 +13,11 @@
     <input type="submit">
     </form>
     
-    <% if( typeof result != 'undefined' ) { 
-	for(var i in result){
-	%>
+    <% if( typeof result != 'undefined' ) { %>
+    
+	<h3>Найдено <%= result.length%>шт. с похожестью > 10%</h3>
+	
+	<% for(var i in result){%>
 	<div>
 	    <a target=_blank class="ids" href="/get?id=<%= result[i].id %>"><%= result[i].id %></a>
 	    <span><%= result[i].weight %></span>

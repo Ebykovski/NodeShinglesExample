@@ -43,7 +43,7 @@ app.post('/', function(req, res, next){
 	    var outArr = [];
 	    
 	    for(var i in result){
-		if(result[i] > 0){
+		if(result[i] > 0.1){
 		    outArr.push({
 			id : i,
 			weight : result[i]
