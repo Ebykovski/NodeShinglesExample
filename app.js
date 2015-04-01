@@ -62,9 +62,9 @@ app.post('/', function(req, res, next){
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
     host     : 'localhost',
-    user     : 'rabotaudoma',
-    password : '123231',
-    database : 'rabotaudoma'
+    user     : 'test',
+    password : 'xxx',
+    database : 'test'
 });
 connection.connect();
 
